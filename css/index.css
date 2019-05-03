@@ -167,7 +167,7 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
   border-bottom: 1px solid #F1F1F1;
 }
 nav div h1 {
