@@ -1,1 +1,51 @@
 // Navigation code here
+
+nav {
+    .flex (column, center, center);
+    position: fixed;
+    width:100%;
+
+    div {
+        h1 {
+            margin-top: .25em;
+            font-size: 4rem;
+            margin-bottom: .5em;
+            .animation (4s, bouncein, infinite);
+
+            @keyframes bouncein {
+                0% {
+                    transform: scale(1);
+                }
+                25% {
+                    color: yellow;
+                }
+                50% {
+                    transform: scale(1.5);
+                    color: orange;
+                }
+                75% {
+                    color: red;
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .navigation {
+        width: 400px;
+        max-width: 450px;
+        .flex (row, space-around, baseline);
+
+        a {
+            .font (@nav-font, 1.75rem);
+            text-decoration: none;
+            margin-bottom: 1em;
+        }
+    }
+
+    background-color: rgba(246, 246, 246, 0.9);
+    border-bottom: 1px solid @nav-border;
+
+}

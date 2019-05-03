@@ -1,1 +1,27 @@
 // Mixins Here
+
+.flex (@d, @j, @a) {
+    display: flex;
+    flex-direction: @d;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.font (@c, @s) {
+    color: @c;
+    font-size: @s;
+}
+
+.button (@w, @h, @f, @c, @b) {
+    width: @w;
+    height: @h;
+    font-size: @f;
+    color: @c;
+    background-color: @b;
+}
+
+.animation (@d, @n, @i) {
+    animation-duration: @d;
+    animation-name: @n;
+    animation-iteration-count: @i;
+}
