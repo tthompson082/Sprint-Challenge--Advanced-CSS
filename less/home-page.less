@@ -2,6 +2,10 @@
 
 .home {
 
+  .header-img {
+    border-radius: 5px;
+  }
+
   .intro {
 
     h2 {
@@ -58,6 +62,13 @@
       }
 
       .btn {
+        .button (100px, 35px, 1.8rem, white, @btn-bg-color);
+        border-radius: 5px;
+
+        &:hover {
+          background-color: white;
+          color: @btn-bg-color;
+        }
       }
     }
 
