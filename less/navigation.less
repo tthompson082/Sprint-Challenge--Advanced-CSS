@@ -8,6 +8,26 @@ nav {
             margin-top: .25em;
             font-size: 4rem;
             margin-bottom: .5em;
+            .animation (4s, bouncein, infinite);
+
+            @keyframes bouncein {
+                0% {
+                    transform: scale(1);
+                }
+                25% {
+                    color: yellow;
+                }
+                50% {
+                    transform: scale(1.5);
+                    color: orange;
+                }
+                75% {
+                    color: red;
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
         }
     }
 
@@ -25,4 +45,5 @@ nav {
 
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
+
 }

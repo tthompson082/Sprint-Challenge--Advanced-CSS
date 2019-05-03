@@ -172,6 +172,27 @@ nav div h1 {
   margin-top: 0.25em;
   font-size: 4rem;
   margin-bottom: 0.5em;
+  animation-duration: 4s;
+  animation-name: bouncein;
+  animation-iteration-count: infinite;
+}
+@keyframes bouncein {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    transform: scale(1.5);
+    color: orange;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 nav .navigation {
   width: 400px;
